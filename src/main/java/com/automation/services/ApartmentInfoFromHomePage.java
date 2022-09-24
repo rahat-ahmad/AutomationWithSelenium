@@ -29,8 +29,11 @@ public class ApartmentInfoFromHomePage {
         for(int i = 0; i<getTotalApartmentCount();i++){
             HomePageInfo homePageInfo = new HomePageInfo();
             homePageInfo.setApartmentName(getElemntOfApartment(i));
+            System.out.println("Apartment Name: "+ homePageInfo.apartmentName);
             homePageInfo.seturl(getElemntOfApartment(i));
-            homePageInfo.setBedListPerEachApartmentAndMinPriceBed(getElemntOfApartment(i));
+            System.out.println("Apartment URL: "+ homePageInfo.url);
+            homePageInfo.setBedListPerEachApartmentAndMinPriceBed(getElemntOfApartment(i),i);
+            System.out.println("Apartment Min price count: "+ homePageInfo.minPricePerBed.size());
             homePageInfoList.add(homePageInfo);
         }
 

@@ -1,106 +1,2186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.automation.ApartmentTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-09-24T07:48:38" hostname="K-RAHAT-L1" time="30.442">
+<testsuite name="com.automation.ApartmentTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-24T14:27:07" hostname="K-RAHAT-L1" time="853.827">
   <properties/>
-  <testcase name="loginWithValidCredentials" classname="com.automation.ApartmentTest" time="30.442">
-    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of any elements located by By.xpath: //section[@class='search-column']/ul/li (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of any elements located by By.xpath: //section[@class='search-column']/ul/li (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.automation.services.ApartmentInfoFromHomePage.getTotalApartmentCount(ApartmentInfoFromHomePage.java:41)
-	at com.automation.services.ApartmentInfoFromHomePage.getAparmentInfoFromHomePage(ApartmentInfoFromHomePage.java:29)
-	at com.automation.ApartmentTest.loginWithValidCredentials(ApartmentTest.java:43)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=105.0.5195.127)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'K-RAHAT-L1', ip: '192.168.68.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8a39627db78246afa0cae3944495349c, findElements {using=xpath, value=//section[@class='search-column']/ul/li}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\RAHAT~1.AHM\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:63115}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63115/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8a39627db78246afa0cae3944495349c
-	at jdk.internal.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:372)
-	at org.openqa.selenium.support.ui.ExpectedConditions$11.apply(ExpectedConditions.java:321)
-	at org.openqa.selenium.support.ui.ExpectedConditions$11.apply(ExpectedConditions.java:318)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 53 more
-</failure>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="loginWithValidCredentials" classname="com.automation.ApartmentTest" time="853.827"/>
+  <system-out><![CDATA[Apartment Name: Meadows at Montgomery (55+)
+Apartment URL: https://bestrentnj.com/Communities/Meadows-at-Montgomery-(55+)/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2395
+Apartment Min price count: 1
+Apartment Name: Rivendell Meadows
+Apartment URL: https://bestrentnj.com/Communities/Rivendell-Meadows/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2625
+Total Bed: 2 Bedroom
+Min Price of that bed: 2825
+Total Bed: 3 Bedroom
+Min Price of that bed: 3290
+Apartment Min price count: 3
+Apartment Name: Amwell Terrace
+Apartment URL: https://bestrentnj.com/Communities/Amwell-Terrace/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2195
+Total Bed: 2 Bedroom
+Min Price of that bed: 3095
+Total Bed: 3 Bedroom
+Min Price of that bed: 2935
+Apartment Min price count: 3
+Apartment Name: Bayonne Bay
+Apartment URL: https://bestrentnj.com/Communities/Bayonne-Bay/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2420
+Total Bed: 2 Bedroom
+Min Price of that bed: 3855
+Total Bed: 3 Bedroom
+Min Price of that bed: 4100
+Apartment Min price count: 3
+Apartment Name: Grove Crossing
+Apartment URL: https://bestrentnj.com/Communities/Grove-Crossing/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2095
+Total Bed: 2 Bedroom
+Min Price of that bed: 2645
+Apartment Min price count: 2
+Apartment Name: Harbortown Breeze
+Apartment URL: https://bestrentnj.com/Communities/Harbortown-Breeze/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2495
+Total Bed: 3 Bedroom
+Min Price of that bed: 3570
+Apartment Min price count: 2
+Apartment Name: Tyler Greens
+Apartment URL: https://bestrentnj.com/Communities/Tyler-Greens/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2515
+Total Bed: 3 Bedroom
+Min Price of that bed: 2865
+Apartment Min price count: 2
+Apartment Name: Helix at Xchange
+Apartment URL: https://bestrentnj.com/Communities/Helix-at-Xchange/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2625
+Total Bed: 2 Bedroom
+Min Price of that bed: 3075
+Total Bed: 3 Bedroom
+Min Price of that bed: 3725
+Apartment Min price count: 3
+Apartment Name: Gardens at Jackson 21
+Apartment URL: https://bestrentnj.com/Communities/Gardens-at-Jackson-21/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1995
+Total Bed: 2 Bedroom
+Min Price of that bed: 2340
+Apartment Min price count: 2
+Apartment Name: Ewing Town Center
+Apartment URL: https://bestrentnj.com/Communities/Ewing-Town-Center/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1995
+Total Bed: 2 Bedroom
+Min Price of that bed: 2620
+Total Bed: 3 Bedroom
+Min Price of that bed: 3095
+Apartment Min price count: 3
+Apartment Name: Rivendell at Edison
+Apartment URL: https://bestrentnj.com/Communities/Rivendell-at-Edison/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1965
+Total Bed: 2 Bedroom
+Min Price of that bed: 2280
+Total Bed: 3 Bedroom
+Min Price of that bed: 2935
+Apartment Min price count: 3
+Apartment Name: Station Village at Avenel
+Apartment URL: https://bestrentnj.com/Communities/Station-Village-at-Avenel/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2426
+Total Bed: 2 Bedroom
+Min Price of that bed: 2511
+Apartment Min price count: 2
+Apartment Name: Next at Xchange
+Apartment URL: https://bestrentnj.com/Communities/Next-at-Xchange/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2725
+Total Bed: 2 Bedroom
+Min Price of that bed: 3010
+Apartment Min price count: 2
+Apartment Name: Pike Run Meadows
+Apartment URL: https://bestrentnj.com/Communities/Pike-Run-Meadows/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2715
+Total Bed: 2 Bedroom
+Min Price of that bed: 3175
+Apartment Min price count: 2
+Apartment Name: Oak Tree Village
+Apartment URL: https://bestrentnj.com/Communities/Oak-Tree-Village/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2150
+Total Bed: 2 Bedroom
+Min Price of that bed: 2780
+Apartment Min price count: 2
+Apartment Name: Hidden Valley
+Apartment URL: https://bestrentnj.com/Communities/Hidden-Valley/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2010
+Total Bed: 2 Bedroom
+Min Price of that bed: 2450
+Apartment Min price count: 2
+Apartment Name: Gill Lane
+Apartment URL: https://bestrentnj.com/Communities/Gill-Lane/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1800
+Total Bed: 2 Bedroom
+Min Price of that bed: 2285
+Apartment Min price count: 2
+Apartment Name: Pike Run Village
+Apartment URL: https://bestrentnj.com/Communities/Pike-Run-Village/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2045
+Total Bed: 2 Bedroom
+Min Price of that bed: 2545
+Apartment Min price count: 2
+Apartment Name: Autumn Hills
+Apartment URL: https://bestrentnj.com/Communities/Autumn-Hills/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2575
+Apartment Min price count: 1
+Apartment Name: Fox Hill Run
+Apartment URL: https://bestrentnj.com/Communities/Fox-Hill-Run/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2185
+Apartment Min price count: 1
+Apartment Name: Renaissance Manor
+Apartment URL: https://bestrentnj.com/Communities/Renaissance-Manor/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2195
+Total Bed: 3 Bedroom
+Min Price of that bed: 3125
+Apartment Min price count: 2
+Apartment Name: Towne Centre at Englewood
+Apartment URL: https://bestrentnj.com/Communities/Towne-Centre-at-Englewood/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2486
+Total Bed: 2 Bedroom
+Min Price of that bed: 3445
+Total Bed: 3 Bedroom
+Min Price of that bed: 4406
+Apartment Min price count: 3
+Apartment Name: Beekman Gardens
+Apartment URL: https://bestrentnj.com/Communities/Beekman-Gardens/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1855
+Total Bed: 2 Bedroom
+Min Price of that bed: 2185
+Apartment Min price count: 2
+Apartment Name: Colonial Gardens
+Apartment URL: https://bestrentnj.com/Communities/Colonial-Gardens/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1545
+Total Bed: 2 Bedroom
+Min Price of that bed: 2015
+Apartment Min price count: 2
+Apartment Name: Liberty Terrace
+Apartment URL: https://bestrentnj.com/Communities/Liberty-Terrace/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2750
+Apartment Min price count: 1
+Apartment Name: Hilltop Estates
+Apartment URL: https://bestrentnj.com/Communities/Hilltop-Estates/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1675
+Total Bed: 2 Bedroom
+Min Price of that bed: 2195
+Apartment Min price count: 2
+Apartment Name: Florida Grove Arms
+Apartment URL: https://bestrentnj.com/Communities/Florida-Grove-Arms/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1625
+Total Bed: 2 Bedroom
+Min Price of that bed: 2015
+Apartment Min price count: 2
+Apartment Name: Colonial Heights
+Apartment URL: https://bestrentnj.com/Communities/Colonial-Heights/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2165
+Total Bed: 2 Bedroom
+Min Price of that bed: 2440
+Apartment Min price count: 2
+Apartment Name: Mae Brook at Renaissance
+Apartment URL: https://bestrentnj.com/Communities/Mae-Brook-at-Renaissance/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2195
+Total Bed: 3 Bedroom
+Min Price of that bed: 3225
+Apartment Min price count: 2
+Apartment Name: Green Plaza
+Apartment URL: https://bestrentnj.com/Communities/Green-Plaza/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2335
+Apartment Min price count: 1
+Apartment Name: Woodbridge Terrace
+Apartment URL: https://bestrentnj.com/Communities/Woodbridge-Terrace/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1755
+Total Bed: 2 Bedroom
+Min Price of that bed: 2345
+Apartment Min price count: 2
+Apartment Name: River Links
+Apartment URL: https://bestrentnj.com/Communities/River-Links/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1870
+Total Bed: 2 Bedroom
+Min Price of that bed: 2870
+Total Bed: 3 Bedroom
+Min Price of that bed: 2990
+Apartment Min price count: 3
+Apartment Name: State Fayette
+Apartment URL: https://bestrentnj.com/Communities/State-Fayette/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1630
+Total Bed: 2 Bedroom
+Min Price of that bed: 2065
+Apartment Min price count: 2
+Apartment Name: Convery Gardens
+Apartment URL: https://bestrentnj.com/Communities/Convery-Gardens/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1565
+Total Bed: 2 Bedroom
+Min Price of that bed: 2020
+Apartment Min price count: 2
+Apartment Name: The Glen at Renaissance
+Apartment URL: https://bestrentnj.com/Communities/The-Glen-at-Renaissance/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2370
+Total Bed: 3 Bedroom
+Min Price of that bed: 3125
+Apartment Min price count: 2
+Apartment Name: Renaissance Terrace
+Apartment URL: https://bestrentnj.com/Communities/Renaissance-Terrace/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2195
+Total Bed: 3 Bedroom
+Min Price of that bed: 3225
+Apartment Min price count: 2
+Apartment Name: Hilltop Manor
+Apartment URL: https://bestrentnj.com/Communities/Hilltop-Manor/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1800
+Total Bed: 2 Bedroom
+Min Price of that bed: 2240
+Apartment Min price count: 2
+Apartment Name: Cloverleaf Gardens
+Apartment URL: https://bestrentnj.com/Communities/Cloverleaf-Gardens/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1465
+Total Bed: 2 Bedroom
+Min Price of that bed: 2095
+Apartment Min price count: 2
+Apartment Name: Woodhaven Commons
+Apartment URL: https://bestrentnj.com/Communities/Woodhaven-Commons/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2670
+Total Bed: 3 Bedroom
+Min Price of that bed: 3200
+Apartment Min price count: 2
+Apartment Name: Meridian Terrace
+Apartment URL: https://bestrentnj.com/Communities/Meridian-Terrace/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2300
+Apartment Min price count: 1
+Apartment Name: Woodbridge Gardens
+Apartment URL: https://bestrentnj.com/Communities/Woodbridge-Gardens/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1430
+Total Bed: 2 Bedroom
+Min Price of that bed: 2205
+Apartment Min price count: 2
+Apartment Name: North Brunswick Manor
+Apartment URL: https://bestrentnj.com/Communities/North-Brunswick-Manor/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1690
+Total Bed: 2 Bedroom
+Min Price of that bed: 2370
+Apartment Min price count: 2
+Apartment Name: Princeton Terrace
+Apartment URL: https://bestrentnj.com/Communities/Princeton-Terrace/
+Total Bed: 2 Bedroom
+Min Price of that bed: 3350
+Apartment Min price count: 1
+Apartment Name: Woodbridge Center Plaza
+Apartment URL: https://bestrentnj.com/Communities/Woodbridge-Center-Plaza/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2130
+Total Bed: 2 Bedroom
+Min Price of that bed: 2305
+Total Bed: 3 Bedroom
+Min Price of that bed: 3415
+Apartment Min price count: 3
+Apartment Name: Rivendell Heights
+Apartment URL: https://bestrentnj.com/Communities/Rivendell-Heights/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2700
+Total Bed: 3 Bedroom
+Min Price of that bed: 2975
+Apartment Min price count: 2
+Apartment Name: Carteret Gardens
+Apartment URL: https://bestrentnj.com/Communities/Carteret-Gardens/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1675
+Total Bed: 2 Bedroom
+Min Price of that bed: 2025
+Apartment Min price count: 2
+Apartment Name: Hawthorne Square
+Apartment URL: https://bestrentnj.com/Communities/Hawthorne-Square/
+Total Bed: 2 Bedroom
+Min Price of that bed: 3075
+Apartment Min price count: 1
+Apartment Name: Rivendell Village
+Apartment URL: https://bestrentnj.com/Communities/Rivendell-Village/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2375
+Total Bed: 3 Bedroom
+Min Price of that bed: 2955
+Apartment Min price count: 2
+Apartment Name: Woodbridge Village
+Apartment URL: https://bestrentnj.com/Communities/Woodbridge-Village/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1570
+Total Bed: 2 Bedroom
+Min Price of that bed: 2275
+Apartment Min price count: 2
+Apartment Name: Meridian Square
+Apartment URL: https://bestrentnj.com/Communities/Meridian-Square/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1900
+Total Bed: 2 Bedroom
+Min Price of that bed: 2125
+Apartment Min price count: 2
+Apartment Name: Park Terrace at Rahway (55+)
+Apartment URL: https://bestrentnj.com/Communities/Park-Terrace-at-Rahway-(55+)/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1675
+Total Bed: 2 Bedroom
+Min Price of that bed: 2025
+Apartment Min price count: 2
+Apartment Name: Woodhaven Terrace
+Apartment URL: https://bestrentnj.com/Communities/Woodhaven-Terrace/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2615
+Total Bed: 3 Bedroom
+Min Price of that bed: 3060
+Apartment Min price count: 2
+Apartment Name: Harbortown Terrace
+Apartment URL: https://bestrentnj.com/Communities/Harbortown-Terrace/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2385
+Total Bed: 3 Bedroom
+Min Price of that bed: 2795
+Apartment Min price count: 2
+Apartment Name: Yorkshire Meadows
+Apartment URL: https://bestrentnj.com/Communities/Yorkshire-Meadows/
+Total Bed: 2 Bedroom
+Min Price of that bed: 3055
+Total Bed: 3 Bedroom
+Min Price of that bed: 3195
+Apartment Min price count: 2
+Apartment Name: Florida Grove Manor
+Apartment URL: https://bestrentnj.com/Communities/Florida-Grove-Manor/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1740
+Total Bed: 2 Bedroom
+Min Price of that bed: 2175
+Apartment Min price count: 2
+Apartment Name: Edison Village
+Apartment URL: https://bestrentnj.com/Communities/Edison-Village/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1805
+Total Bed: 2 Bedroom
+Min Price of that bed: 2285
+Apartment Min price count: 2
+Apartment Name: Village at Stratford (55+)
+Apartment URL: https://bestrentnj.com/Communities/Village-at-Stratford-(55+)/
+Apartment Min price count: 1
+Apartment Name: Hyde Park Village (55+)
+Apartment URL: https://bestrentnj.com/Communities/Hyde-Park-Village-(55+)/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1675
+Total Bed: 2 Bedroom
+Min Price of that bed: 2025
+Apartment Min price count: 2
+Apartment Name: Edison Woods
+Apartment URL: https://bestrentnj.com/Communities/Edison-Woods/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1925
+Total Bed: 2 Bedroom
+Min Price of that bed: 2270
+Apartment Min price count: 2
+Apartment Name: Evergreen East
+Apartment URL: https://bestrentnj.com/Communities/Evergreen-East/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2275
+Apartment Min price count: 1
+Apartment Name: Evergreen Forest
+Apartment URL: https://bestrentnj.com/Communities/Evergreen-Forest/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1955
+Total Bed: 2 Bedroom
+Min Price of that bed: 2300
+Total Bed: 3 Bedroom
+Min Price of that bed: 2855
+Apartment Min price count: 3
+Apartment Name: Blueberry Village
+Apartment URL: https://bestrentnj.com/Communities/Blueberry-Village/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1885
+Total Bed: 2 Bedroom
+Min Price of that bed: 2265
+Total Bed: 3 Bedroom
+Min Price of that bed: 2860
+Apartment Min price count: 3
+Apartment Name: Harbortown Heights
+Apartment URL: https://bestrentnj.com/Communities/Harbortown-Heights/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2470
+Total Bed: 3 Bedroom
+Min Price of that bed: 3015
+Apartment Min price count: 2
+Apartment Name: Harbortown Sail
+Apartment URL: https://bestrentnj.com/Communities/Harbortown-Sail/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2015
+Total Bed: 3 Bedroom
+Min Price of that bed: 3295
+Apartment Min price count: 2
+Apartment Name: Homestead Village
+Apartment URL: https://bestrentnj.com/Communities/Homestead-Village/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2675
+Total Bed: 2 Bedroom
+Min Price of that bed: 2680
+Total Bed: 3 Bedroom
+Min Price of that bed: 3095
+Apartment Min price count: 3
+Apartment Name: Harbortown Ports North East
+Apartment URL: https://bestrentnj.com/Communities/Harbortown-Ports-North-East/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2315
+Total Bed: 3 Bedroom
+Min Price of that bed: 3160
+Apartment Min price count: 2
+Apartment Name: New Center Greens
+Apartment URL: https://bestrentnj.com/Communities/New-Center-Greens/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2445
+Total Bed: 3 Bedroom
+Min Price of that bed: 2795
+Apartment Min price count: 2
+Apartment Name: Edison Woods Senior (55+)
+Apartment URL: https://bestrentnj.com/Communities/Edison-Woods-Senior-(55+)/
+Total Bed: Studio
+Min Price of that bed: 1295
+Total Bed: 1 Bedroom
+Min Price of that bed: 1395
+Apartment Min price count: 2
+Apartment Name: Hidden Village
+Apartment URL: https://bestrentnj.com/Communities/Hidden-Village/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2070
+Apartment Min price count: 1
+Apartment Name: Forest View
+Apartment URL: https://bestrentnj.com/Communities/Forest-View/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2285
+Total Bed: 3 Bedroom
+Min Price of that bed: 2820
+Apartment Min price count: 2
+Apartment Name: Willingboro Square
+Apartment URL: https://bestrentnj.com/Communities/Willingboro-Square/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1585
+Total Bed: 2 Bedroom
+Min Price of that bed: 1900
+Apartment Min price count: 2
+Apartment Name: Sunnymeade Run
+Apartment URL: https://bestrentnj.com/Communities/Sunnymeade-Run/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2395
+Total Bed: 2 Bedroom
+Min Price of that bed: 2755
+Apartment Min price count: 2
+Apartment Name: Yorkshire Village Senior (55+)
+Apartment URL: https://bestrentnj.com/Communities/Yorkshire-Village-Senior-(55+)/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1595
+Total Bed: 2 Bedroom
+Min Price of that bed: 1825
+Apartment Min price count: 2
+Apartment Name: Woodhaven Meadows
+Apartment URL: https://bestrentnj.com/Communities/Woodhaven-Meadows/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2695
+Total Bed: 3 Bedroom
+Min Price of that bed: 3250
+Apartment Min price count: 2
+Apartment Name: Delaware Heights
+Apartment URL: https://bestrentnj.com/Communities/Delaware-Heights/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1620
+Total Bed: 2 Bedroom
+Min Price of that bed: 2140
+Apartment Min price count: 2
+Apartment Name: Trafalgar
+Apartment URL: https://bestrentnj.com/Communities/Trafalgar/
+Total Bed: 1 Bedroom
+Min Price of that bed: 1580
+Total Bed: 2 Bedroom
+Min Price of that bed: 2240
+Apartment Min price count: 2
+Apartment Name: Sun Valley at Florham Park
+Apartment URL: https://bestrentnj.com/Communities/Sun-Valley-at-Florham-Park/
+Total Bed: 1 Bedroom
+Min Price of that bed: 2202
+Total Bed: 2 Bedroom
+Min Price of that bed: 2762
+Total Bed: 3 Bedroom
+Min Price of that bed: 3769
+Apartment Min price count: 3
+Apartment Name: Harbortown Ports
+Apartment URL: https://bestrentnj.com/Communities/Harbortown-Ports/
+Total Bed: 2 Bedroom
+Min Price of that bed: 2455
+Total Bed: 3 Bedroom
+Min Price of that bed: 2925
+Apartment Min price count: 2
+Detail of Apartment: Meadows at Montgomery (55+)
+Amount are: from $2,395
+Amount after trim: 2395
+Amount are: from $2,395
+Amount after trim: 2395
+Amount are: from $2,495
+Amount after trim: 2495
+Amount are: from $2,545
+Amount after trim: 2545
+Amount are: from $2,695
+Amount after trim: 2695
+Amount are: from $2,745
+Amount after trim: 2745
+Amount are: from $2,745
+Amount after trim: 2745
+Amount are: from $2,895
+Amount after trim: 2895
+Amount are: from $2,895
+Amount after trim: 2895
+List of price: [2395, 2395, 2495, 2545, 2695, 2745, 2745, 2895, 2895]
+Getting minimum amount: 2395
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Rivendell Meadows
+Amount are: from $2,625
+Amount after trim: 2625
+Amount are: from $2,670
+Amount after trim: 2670
+List of price: [2625, 2670]
+Getting minimum amount: 2625
+Amount are: from $2,825
+Amount after trim: 2825
+Amount are: from $2,870
+Amount after trim: 2870
+Amount are: from $2,895
+Amount after trim: 2895
+Amount are: from $2,935
+Amount after trim: 2935
+Amount are: from $2,960
+Amount after trim: 2960
+List of price: [2825, 2870, 2895, 2935, 2960]
+Getting minimum amount: 2825
+Amount are: from $3,290
+Amount after trim: 3290
+List of price: [3290]
+Getting minimum amount: 3290
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Amwell Terrace
+Detail of Apartment: Bayonne Bay
+Amount are: from $2,420
+Amount after trim: 2420
+Amount are: from $2,705
+Amount after trim: 2705
+List of price: [2420, 2705]
+Getting minimum amount: 2420
+Amount are: from $3,855
+Amount after trim: 3855
+Amount are: from $4,055
+Amount after trim: 4055
+List of price: [3855, 4055]
+Getting minimum amount: 3855
+Amount are: from $4,100
+Amount after trim: 4100
+Amount are: from $4,440
+Amount after trim: 4440
+Amount are: from $5,475
+Amount after trim: 5475
+List of price: [4100, 4440, 5475]
+Getting minimum amount: 4100
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Grove Crossing
+Amount are: from $2,095
+Amount after trim: 2095
+Amount are: from $2,195
+Amount after trim: 2195
+Amount are: from $2,450
+Amount after trim: 2450
+List of price: [2095, 2195, 2450]
+Getting minimum amount: 2095
+Amount are: from $2,645
+Amount after trim: 2645
+Amount are: from $2,700
+Amount after trim: 2700
+Amount are: from $2,775
+Amount after trim: 2775
+Amount are: from $2,800
+Amount after trim: 2800
+Amount are: from $2,845
+Amount after trim: 2845
+Amount are: from $2,900
+Amount after trim: 2900
+Amount are: from $2,925
+Amount after trim: 2925
+List of price: [2645, 2700, 2775, 2800, 2845, 2900, 2925]
+Getting minimum amount: 2645
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Harbortown Breeze
+Amount are: from $2,495
+Amount after trim: 2495
+Amount are: from $2,550
+Amount after trim: 2550
+Amount are: from $2,580
+Amount after trim: 2580
+Amount are: from $2,670
+Amount after trim: 2670
+List of price: [2495, 2550, 2580, 2670]
+Getting minimum amount: 2495
+Amount are: from $3,570
+Amount after trim: 3570
+List of price: [3570]
+Getting minimum amount: 3570
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Tyler Greens
+Amount are: from $2,515
+Amount after trim: 2515
+Amount are: from $2,540
+Amount after trim: 2540
+List of price: [2515, 2540]
+Getting minimum amount: 2515
+Amount are: from $2,865
+Amount after trim: 2865
+Amount are: from $3,100
+Amount after trim: 3100
+List of price: [2865, 3100]
+Getting minimum amount: 2865
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Helix at Xchange
+Amount are: from $2,625
+Amount after trim: 2625
+Amount are: from $2,625
+Amount after trim: 2625
+Amount are: from $2,650
+Amount after trim: 2650
+Amount are: from $2,675
+Amount after trim: 2675
+Amount are: from $2,695
+Amount after trim: 2695
+Amount are: from $2,695
+Amount after trim: 2695
+Amount are: from $2,795
+Amount after trim: 2795
+Amount are: from $2,805
+Amount after trim: 2805
+List of price: [2625, 2625, 2650, 2675, 2695, 2695, 2795, 2805]
+Getting minimum amount: 2625
+Amount are: from $2,650
+Amount after trim: 2650
+List of price: [2650]
+Getting minimum amount: 2650
+Amount are: from $3,075
+Amount after trim: 3075
+Amount are: from $3,075
+Amount after trim: 3075
+Amount are: from $3,145
+Amount after trim: 3145
+Amount are: from $3,275
+Amount after trim: 3275
+Amount are: from $3,295
+Amount after trim: 3295
+Amount are: from $3,300
+Amount after trim: 3300
+Amount are: from $3,545
+Amount after trim: 3545
+List of price: [3075, 3075, 3145, 3275, 3295, 3300, 3545]
+Getting minimum amount: 3075
+Amount are: from $3,725
+Amount after trim: 3725
+Amount are: from $3,755
+Amount after trim: 3755
+Amount are: from $3,765
+Amount after trim: 3765
+Amount are: from $3,825
+Amount after trim: 3825
+Amount are: from $3,925
+Amount after trim: 3925
+Amount are: from $3,955
+Amount after trim: 3955
+Amount are: from $4,165
+Amount after trim: 4165
+List of price: [3725, 3755, 3765, 3825, 3925, 3955, 4165]
+Getting minimum amount: 3725
+Is Homepage min and detail page min equal? false
+Detail of Apartment: Gardens at Jackson 21
+Amount are: from $1,995
+Amount after trim: 1995
+Amount are: from $1,995
+Amount after trim: 1995
+List of price: [1995, 1995]
+Getting minimum amount: 1995
+Amount are: from $2,340
+Amount after trim: 2340
+Amount are: from $2,340
+Amount after trim: 2340
+Amount are: from $2,425
+Amount after trim: 2425
+Amount are: from $2,425
+Amount after trim: 2425
+Amount are: from $2,515
+Amount after trim: 2515
+Amount are: from $2,515
+Amount after trim: 2515
+List of price: [2340, 2340, 2425, 2425, 2515, 2515]
+Getting minimum amount: 2340
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Ewing Town Center
+Amount are: from $1,995
+Amount after trim: 1995
+Amount are: from $2,195
+Amount after trim: 2195
+Amount are: from $2,225
+Amount after trim: 2225
+List of price: [1995, 2195, 2225]
+Getting minimum amount: 1995
+Amount are: from $2,620
+Amount after trim: 2620
+Amount are: from $2,620
+Amount after trim: 2620
+Amount are: from $2,695
+Amount after trim: 2695
+Amount are: from $2,770
+Amount after trim: 2770
+Amount are: from $2,800
+Amount after trim: 2800
+Amount are: from $2,865
+Amount after trim: 2865
+Amount are: from $2,895
+Amount after trim: 2895
+Amount are: from $2,895
+Amount after trim: 2895
+List of price: [2620, 2620, 2695, 2770, 2800, 2865, 2895, 2895]
+Getting minimum amount: 2620
+Amount are: from $3,095
+Amount after trim: 3095
+Amount are: from $3,295
+Amount after trim: 3295
+Amount are: from $3,295
+Amount after trim: 3295
+List of price: [3095, 3295, 3295]
+Getting minimum amount: 3095
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Rivendell at Edison
+Amount are: from $1,965
+Amount after trim: 1965
+Amount are: from $1,965
+Amount after trim: 1965
+Amount are: from $1,965
+Amount after trim: 1965
+List of price: [1965, 1965, 1965]
+Getting minimum amount: 1965
+Amount are: from $2,280
+Amount after trim: 2280
+Amount are: from $2,280
+Amount after trim: 2280
+Amount are: from $2,280
+Amount after trim: 2280
+Amount are: from $2,650
+Amount after trim: 2650
+List of price: [2280, 2280, 2280, 2650]
+Getting minimum amount: 2280
+Amount are: from $2,935
+Amount after trim: 2935
+List of price: [2935]
+Getting minimum amount: 2935
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Station Village at Avenel
+Amount are: from $2,426
+Amount after trim: 2426
+Amount are: from $2,426
+Amount after trim: 2426
+Amount are: from $2,478
+Amount after trim: 2478
+Amount are: from $2,478
+Amount after trim: 2478
+Amount are: from $2,483
+Amount after trim: 2483
+Amount are: from $2,483
+Amount after trim: 2483
+Amount are: from $2,522
+Amount after trim: 2522
+Amount are: from $2,522
+Amount after trim: 2522
+List of price: [2426, 2426, 2478, 2478, 2483, 2483, 2522, 2522]
+Getting minimum amount: 2426
+Amount are: from $2,511
+Amount after trim: 2511
+Amount are: from $2,526
+Amount after trim: 2526
+Amount are: from $2,537
+Amount after trim: 2537
+Amount are: from $2,561
+Amount after trim: 2561
+Amount are: from $2,573
+Amount after trim: 2573
+Amount are: from $2,589
+Amount after trim: 2589
+Amount are: from $2,753
+Amount after trim: 2753
+Amount are: from $2,758
+Amount after trim: 2758
+Amount are: from $2,758
+Amount after trim: 2758
+Amount are: from $2,797
+Amount after trim: 2797
+Amount are: from $2,828
+Amount after trim: 2828
+Amount are: from $2,837
+Amount after trim: 2837
+Amount are: from $3,012
+Amount after trim: 3012
+Amount are: from $3,063
+Amount after trim: 3063
+Amount are: from $3,283
+Amount after trim: 3283
+Amount are: from $3,432
+Amount after trim: 3432
+List of price: [2511, 2526, 2537, 2561, 2573, 2589, 2753, 2758, 2758, 2797, 2828, 2837, 3012, 3063, 3283, 3432]
+Getting minimum amount: 2511
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Next at Xchange
+Amount are: from $2,725
+Amount after trim: 2725
+Amount are: from $2,880
+Amount after trim: 2880
+Amount are: from $2,910
+Amount after trim: 2910
+Amount are: from $2,925
+Amount after trim: 2925
+List of price: [2725, 2880, 2910, 2925]
+Getting minimum amount: 2725
+Amount are: from $3,010
+Amount after trim: 3010
+Amount are: from $3,290
+Amount after trim: 3290
+Amount are: from $3,400
+Amount after trim: 3400
+Amount are: from $3,470
+Amount after trim: 3470
+Amount are: from $3,500
+Amount after trim: 3500
+Amount are: from $3,545
+Amount after trim: 3545
+Amount are: from $3,575
+Amount after trim: 3575
+Amount are: from $3,775
+Amount after trim: 3775
+List of price: [3010, 3290, 3400, 3470, 3500, 3545, 3575, 3775]
+Getting minimum amount: 3010
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Pike Run Meadows
+Amount are: from $2,715
+Amount after trim: 2715
+List of price: [2715]
+Getting minimum amount: 2715
+Amount are: from $2,795
+Amount after trim: 2795
+List of price: [2795]
+Getting minimum amount: 2795
+Amount are: from $3,175
+Amount after trim: 3175
+Amount are: from $3,175
+Amount after trim: 3175
+Amount are: from $3,255
+Amount after trim: 3255
+List of price: [3175, 3175, 3255]
+Getting minimum amount: 3175
+Is Homepage min and detail page min equal? false
+Detail of Apartment: Oak Tree Village
+Amount are: from $2,150
+Amount after trim: 2150
+Amount are: from $2,165
+Amount after trim: 2165
+Amount are: from $2,180
+Amount after trim: 2180
+List of price: [2150, 2165, 2180]
+Getting minimum amount: 2150
+Amount are: from $2,780
+Amount after trim: 2780
+Amount are: from $2,795
+Amount after trim: 2795
+Amount are: from $2,810
+Amount after trim: 2810
+List of price: [2780, 2795, 2810]
+Getting minimum amount: 2780
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Hidden Valley
+Amount are: from $2,010
+Amount after trim: 2010
+Amount are: from $2,045
+Amount after trim: 2045
+Amount are: from $2,060
+Amount after trim: 2060
+List of price: [2010, 2045, 2060]
+Getting minimum amount: 2010
+Amount are: from $2,450
+Amount after trim: 2450
+Amount are: from $2,520
+Amount after trim: 2520
+Amount are: from $2,535
+Amount after trim: 2535
+List of price: [2450, 2520, 2535]
+Getting minimum amount: 2450
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Gill Lane
+Amount are: from $1,800
+Amount after trim: 1800
+Amount are: from $1,820
+Amount after trim: 1820
+Amount are: from $2,215
+Amount after trim: 2215
+List of price: [1800, 1820, 2215]
+Getting minimum amount: 1800
+Amount are: from $2,285
+Amount after trim: 2285
+Amount are: from $2,295
+Amount after trim: 2295
+Amount are: from $2,830
+Amount after trim: 2830
+Amount are: from $2,935
+Amount after trim: 2935
+List of price: [2285, 2295, 2830, 2935]
+Getting minimum amount: 2285
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Pike Run Village
+Amount are: from $2,045
+Amount after trim: 2045
+List of price: [2045]
+Getting minimum amount: 2045
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,245
+Amount after trim: 2245
+List of price: [2245, 2245, 2245]
+Getting minimum amount: 2245
+Amount are: from $2,545
+Amount after trim: 2545
+Amount are: from $2,575
+Amount after trim: 2575
+Amount are: from $2,575
+Amount after trim: 2575
+Amount are: from $2,575
+Amount after trim: 2575
+Amount are: from $2,575
+Amount after trim: 2575
+Amount are: from $2,745
+Amount after trim: 2745
+List of price: [2545, 2575, 2575, 2575, 2575, 2745]
+Getting minimum amount: 2545
+Is Homepage min and detail page min equal? false
+Detail of Apartment: Autumn Hills
+Amount are: from $2,575
+Amount after trim: 2575
+Amount are: from $2,645
+Amount after trim: 2645
+Amount are: from $2,715
+Amount after trim: 2715
+List of price: [2575, 2645, 2715]
+Getting minimum amount: 2575
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Fox Hill Run
+Amount are: from $2,185
+Amount after trim: 2185
+Amount are: from $2,300
+Amount after trim: 2300
+Amount are: from $2,375
+Amount after trim: 2375
+Amount are: from $2,385
+Amount after trim: 2385
+Amount are: from $2,420
+Amount after trim: 2420
+Amount are: from $2,425
+Amount after trim: 2425
+Amount are: from $2,520
+Amount after trim: 2520
+List of price: [2185, 2300, 2375, 2385, 2420, 2425, 2520]
+Getting minimum amount: 2185
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Renaissance Manor
+Amount are: from $2,195
+Amount after trim: 2195
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,265
+Amount after trim: 2265
+Amount are: from $2,510
+Amount after trim: 2510
+Amount are: from $2,545
+Amount after trim: 2545
+Amount are: from $2,615
+Amount after trim: 2615
+Amount are: from $2,655
+Amount after trim: 2655
+List of price: [2195, 2245, 2265, 2510, 2545, 2615, 2655]
+Getting minimum amount: 2195
+Amount are: from $3,125
+Amount after trim: 3125
+Amount are: from $3,125
+Amount after trim: 3125
+Amount are: from $3,365
+Amount after trim: 3365
+List of price: [3125, 3125, 3365]
+Getting minimum amount: 3125
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Towne Centre at Englewood
+Amount are: from $2,486
+Amount after trim: 2486
+Amount are: from $2,692
+Amount after trim: 2692
+Amount are: from $2,935
+Amount after trim: 2935
+List of price: [2486, 2692, 2935]
+Getting minimum amount: 2486
+Amount are: from $3,445
+Amount after trim: 3445
+Amount are: from $3,867
+Amount after trim: 3867
+Amount are: from $3,911
+Amount after trim: 3911
+Amount are: from $4,290
+Amount after trim: 4290
+List of price: [3445, 3867, 3911, 4290]
+Getting minimum amount: 3445
+Amount are: from $4,406
+Amount after trim: 4406
+Amount are: from $4,438
+Amount after trim: 4438
+Amount are: from $4,511
+Amount after trim: 4511
+Amount are: from $4,686
+Amount after trim: 4686
+List of price: [4406, 4438, 4511, 4686]
+Getting minimum amount: 4406
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Beekman Gardens
+Amount are: from $1,855
+Amount after trim: 1855
+Amount are: from $1,955
+Amount after trim: 1955
+List of price: [1855, 1955]
+Getting minimum amount: 1855
+Amount are: from $2,185
+Amount after trim: 2185
+Amount are: from $2,335
+Amount after trim: 2335
+Amount are: from $2,395
+Amount after trim: 2395
+List of price: [2185, 2335, 2395]
+Getting minimum amount: 2185
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Colonial Gardens
+Amount are: from $1,545
+Amount after trim: 1545
+Amount are: from $1,845
+Amount after trim: 1845
+Amount are: from $1,880
+Amount after trim: 1880
+Amount are: from $1,970
+Amount after trim: 1970
+List of price: [1545, 1845, 1880, 1970]
+Getting minimum amount: 1545
+Amount are: from $2,015
+Amount after trim: 2015
+Amount are: from $2,200
+Amount after trim: 2200
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,400
+Amount after trim: 2400
+List of price: [2015, 2200, 2245, 2400]
+Getting minimum amount: 2015
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Liberty Terrace
+Amount are: from $2,750
+Amount after trim: 2750
+Amount are: from $2,770
+Amount after trim: 2770
+Amount are: from $2,800
+Amount after trim: 2800
+Amount are: from $2,800
+Amount after trim: 2800
+Amount are: from $2,800
+Amount after trim: 2800
+Amount are: from $2,825
+Amount after trim: 2825
+Amount are: from $2,870
+Amount after trim: 2870
+Amount are: from $2,870
+Amount after trim: 2870
+Amount are: from $2,895
+Amount after trim: 2895
+Amount are: from $2,920
+Amount after trim: 2920
+Amount are: from $2,970
+Amount after trim: 2970
+Amount are: from $3,050
+Amount after trim: 3050
+Amount are: from $3,050
+Amount after trim: 3050
+Amount are: from $3,095
+Amount after trim: 3095
+Amount are: from $3,095
+Amount after trim: 3095
+Amount are: from $3,095
+Amount after trim: 3095
+Amount are: from $3,195
+Amount after trim: 3195
+List of price: [2750, 2770, 2800, 2800, 2800, 2825, 2870, 2870, 2895, 2920, 2970, 3050, 3050, 3095, 3095, 3095, 3195]
+Getting minimum amount: 2750
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Hilltop Estates
+Amount are: from $1,675
+Amount after trim: 1675
+List of price: [1675]
+Getting minimum amount: 1675
+Amount are: from $2,195
+Amount after trim: 2195
+List of price: [2195]
+Getting minimum amount: 2195
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Florida Grove Arms
+Amount are: from $1,625
+Amount after trim: 1625
+Amount are: from $1,665
+Amount after trim: 1665
+Amount are: from $1,770
+Amount after trim: 1770
+Amount are: from $1,790
+Amount after trim: 1790
+List of price: [1625, 1665, 1770, 1790]
+Getting minimum amount: 1625
+Amount are: from $2,015
+Amount after trim: 2015
+Amount are: from $2,195
+Amount after trim: 2195
+List of price: [2015, 2195]
+Getting minimum amount: 2015
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Colonial Heights
+Amount are: from $2,165
+Amount after trim: 2165
+Amount are: from $2,175
+Amount after trim: 2175
+Amount are: from $2,245
+Amount after trim: 2245
+List of price: [2165, 2175, 2245]
+Getting minimum amount: 2165
+Amount are: from $2,440
+Amount after trim: 2440
+Amount are: from $2,590
+Amount after trim: 2590
+List of price: [2440, 2590]
+Getting minimum amount: 2440
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Mae Brook at Renaissance
+Amount are: from $2,195
+Amount after trim: 2195
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,510
+Amount after trim: 2510
+Amount are: from $2,510
+Amount after trim: 2510
+Amount are: from $2,615
+Amount after trim: 2615
+Amount are: from $2,655
+Amount after trim: 2655
+Amount are: from $2,720
+Amount after trim: 2720
+List of price: [2195, 2245, 2245, 2245, 2245, 2510, 2510, 2615, 2655, 2720]
+Getting minimum amount: 2195
+Amount are: from $3,225
+Amount after trim: 3225
+Amount are: from $3,225
+Amount after trim: 3225
+Amount are: from $3,365
+Amount after trim: 3365
+List of price: [3225, 3225, 3365]
+Getting minimum amount: 3225
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Green Plaza
+Amount are: from $2,335
+Amount after trim: 2335
+Amount are: from $2,365
+Amount after trim: 2365
+Amount are: from $2,365
+Amount after trim: 2365
+Amount are: from $2,395
+Amount after trim: 2395
+Amount are: from $2,560
+Amount after trim: 2560
+List of price: [2335, 2365, 2365, 2395, 2560]
+Getting minimum amount: 2335
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Woodbridge Terrace
+Amount are: from $1,755
+Amount after trim: 1755
+Amount are: from $1,755
+Amount after trim: 1755
+Amount are: from $1,815
+Amount after trim: 1815
+Amount are: from $1,875
+Amount after trim: 1875
+List of price: [1755, 1755, 1815, 1875]
+Getting minimum amount: 1755
+Amount are: from $2,345
+Amount after trim: 2345
+Amount are: from $2,505
+Amount after trim: 2505
+Amount are: from $2,595
+Amount after trim: 2595
+Amount are: from $2,615
+Amount after trim: 2615
+Amount are: from $2,745
+Amount after trim: 2745
+List of price: [2345, 2505, 2595, 2615, 2745]
+Getting minimum amount: 2345
+Is Homepage min and detail page min equal? true
+Detail of Apartment: River Links
+Amount are: from $1,870
+Amount after trim: 1870
+Amount are: from $2,100
+Amount after trim: 2100
+Amount are: from $2,310
+Amount after trim: 2310
+List of price: [1870, 2100, 2310]
+Getting minimum amount: 1870
+Amount are: from $2,870
+Amount after trim: 2870
+Amount are: from $3,020
+Amount after trim: 3020
+List of price: [2870, 3020]
+Getting minimum amount: 2870
+Amount are: from $2,990
+Amount after trim: 2990
+Amount are: from $3,070
+Amount after trim: 3070
+Amount are: from $3,220
+Amount after trim: 3220
+List of price: [2990, 3070, 3220]
+Getting minimum amount: 2990
+Is Homepage min and detail page min equal? true
+Detail of Apartment: State Fayette
+Amount are: from $1,630
+Amount after trim: 1630
+Amount are: from $1,670
+Amount after trim: 1670
+List of price: [1630, 1670]
+Getting minimum amount: 1630
+Amount are: from $2,065
+Amount after trim: 2065
+Amount are: from $2,090
+Amount after trim: 2090
+List of price: [2065, 2090]
+Getting minimum amount: 2065
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Convery Gardens
+Amount are: from $1,565
+Amount after trim: 1565
+Amount are: from $1,595
+Amount after trim: 1595
+Amount are: from $1,595
+Amount after trim: 1595
+List of price: [1565, 1595, 1595]
+Getting minimum amount: 1565
+Amount are: from $2,020
+Amount after trim: 2020
+Amount are: from $2,025
+Amount after trim: 2025
+List of price: [2020, 2025]
+Getting minimum amount: 2020
+Is Homepage min and detail page min equal? true
+Detail of Apartment: The Glen at Renaissance
+Amount are: from $2,370
+Amount after trim: 2370
+Amount are: from $2,470
+Amount after trim: 2470
+Amount are: from $2,470
+Amount after trim: 2470
+List of price: [2370, 2470, 2470]
+Getting minimum amount: 2370
+Amount are: from $3,125
+Amount after trim: 3125
+Amount are: from $3,125
+Amount after trim: 3125
+Amount are: from $3,125
+Amount after trim: 3125
+Amount are: from $3,125
+Amount after trim: 3125
+Amount are: from $3,125
+Amount after trim: 3125
+Amount are: from $3,125
+Amount after trim: 3125
+Amount are: from $3,280
+Amount after trim: 3280
+Amount are: from $3,530
+Amount after trim: 3530
+List of price: [3125, 3125, 3125, 3125, 3125, 3125, 3280, 3530]
+Getting minimum amount: 3125
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Renaissance Terrace
+Amount are: from $2,195
+Amount after trim: 2195
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,245
+Amount after trim: 2245
+Amount are: from $2,510
+Amount after trim: 2510
+Amount are: from $2,510
+Amount after trim: 2510
+Amount are: from $2,615
+Amount after trim: 2615
+Amount are: from $2,655
+Amount after trim: 2655
+Amount are: from $2,720
+Amount after trim: 2720
+List of price: [2195, 2245, 2245, 2245, 2245, 2510, 2510, 2615, 2655, 2720]
+Getting minimum amount: 2195
+Amount are: from $3,225
+Amount after trim: 3225
+Amount are: from $3,225
+Amount after trim: 3225
+Amount are: from $3,365
+Amount after trim: 3365
+List of price: [3225, 3225, 3365]
+Getting minimum amount: 3225
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Hilltop Manor
+Amount are: from $1,800
+Amount after trim: 1800
+Amount are: from $1,825
+Amount after trim: 1825
+List of price: [1800, 1825]
+Getting minimum amount: 1800
+Amount are: from $2,240
+Amount after trim: 2240
+Amount are: from $2,350
+Amount after trim: 2350
+List of price: [2240, 2350]
+Getting minimum amount: 2240
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Cloverleaf Gardens
+Amount are: from $1,465
+Amount after trim: 1465
+Amount are: from $1,535
+Amount after trim: 1535
+List of price: [1465, 1535]
+Getting minimum amount: 1465
+Amount are: from $2,095
+Amount after trim: 2095
+Amount are: from $2,170
+Amount after trim: 2170
+List of price: [2095, 2170]
+Getting minimum amount: 2095
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Woodhaven Commons
+Amount are: from $2,670
+Amount after trim: 2670
+Amount are: from $2,710
+Amount after trim: 2710
+List of price: [2670, 2710]
+Getting minimum amount: 2670
+Amount are: from $3,200
+Amount after trim: 3200
+Amount are: from $3,210
+Amount after trim: 3210
+Amount are: from $3,230
+Amount after trim: 3230
+Amount are: from $3,240
+Amount after trim: 3240
+Amount are: from $3,250
+Amount after trim: 3250
+List of price: [3200, 3210, 3230, 3240, 3250]
+Getting minimum amount: 3200
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Meridian Terrace
+Amount are: from $2,300
+Amount after trim: 2300
+Amount are: from $2,300
+Amount after trim: 2300
+Amount are: from $2,325
+Amount after trim: 2325
+Amount are: from $2,325
+Amount after trim: 2325
+Amount are: from $2,370
+Amount after trim: 2370
+Amount are: from $2,425
+Amount after trim: 2425
+Amount are: from $2,425
+Amount after trim: 2425
+Amount are: from $2,425
+Amount after trim: 2425
+Amount are: from $2,425
+Amount after trim: 2425
+Amount are: from $2,450
+Amount after trim: 2450
+Amount are: from $2,450
+Amount after trim: 2450
+Amount are: from $2,450
+Amount after trim: 2450
+Amount are: from $2,570
+Amount after trim: 2570
+Amount are: from $2,650
+Amount after trim: 2650
+Amount are: from $2,650
+Amount after trim: 2650
+List of price: [2300, 2300, 2325, 2325, 2370, 2425, 2425, 2425, 2425, 2450, 2450, 2450, 2570, 2650, 2650]
+Getting minimum amount: 2300
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Woodbridge Gardens
+Amount are: from $1,430
+Amount after trim: 1430
+Amount are: from $1,470
+Amount after trim: 1470
+Amount are: from $1,700
+Amount after trim: 1700
+List of price: [1430, 1470, 1700]
+Getting minimum amount: 1430
+Amount are: from $2,205
+Amount after trim: 2205
+Amount are: from $2,325
+Amount after trim: 2325
+Amount are: from $2,620
+Amount after trim: 2620
+List of price: [2205, 2325, 2620]
+Getting minimum amount: 2205
+Is Homepage min and detail page min equal? true
+Detail of Apartment: North Brunswick Manor
+Amount are: from $1,690
+Amount after trim: 1690
+Amount are: from $1,710
+Amount after trim: 1710
+List of price: [1690, 1710]
+Getting minimum amount: 1690
+Amount are: from $2,370
+Amount after trim: 2370
+Amount are: from $2,450
+Amount after trim: 2450
+Amount are: from $2,605
+Amount after trim: 2605
+Amount are: from $2,630
+Amount after trim: 2630
+List of price: [2370, 2450, 2605, 2630]
+Getting minimum amount: 2370
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Princeton Terrace
+Amount are: from $3,350
+Amount after trim: 3350
+Amount are: from $3,350
+Amount after trim: 3350
+Amount are: from $3,450
+Amount after trim: 3450
+Amount are: from $3,450
+Amount after trim: 3450
+List of price: [3350, 3350, 3450, 3450]
+Getting minimum amount: 3350
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Woodbridge Center Plaza
+Amount are: from $2,130
+Amount after trim: 2130
+List of price: [2130]
+Getting minimum amount: 2130
+Amount are: from $2,305
+Amount after trim: 2305
+Amount are: from $2,370
+Amount after trim: 2370
+Amount are: from $2,385
+Amount after trim: 2385
+List of price: [2305, 2370, 2385]
+Getting minimum amount: 2305
+Amount are: from $3,415
+Amount after trim: 3415
+List of price: [3415]
+Getting minimum amount: 3415
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Rivendell Heights
+Amount are: from $2,700
+Amount after trim: 2700
+Amount are: from $2,700
+Amount after trim: 2700
+List of price: [2700, 2700]
+Getting minimum amount: 2700
+Amount are: from $2,975
+Amount after trim: 2975
+Amount are: from $2,975
+Amount after trim: 2975
+List of price: [2975, 2975]
+Getting minimum amount: 2975
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Carteret Gardens
+Amount are: from $1,675
+Amount after trim: 1675
+Amount are: from $1,845
+Amount after trim: 1845
+List of price: [1675, 1845]
+Getting minimum amount: 1675
+Amount are: from $2,025
+Amount after trim: 2025
+Amount are: from $2,125
+Amount after trim: 2125
+List of price: [2025, 2125]
+Getting minimum amount: 2025
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Hawthorne Square
+Amount are: from $3,075
+Amount after trim: 3075
+Amount are: from $3,175
+Amount after trim: 3175
+Amount are: from $3,175
+Amount after trim: 3175
+Amount are: from $3,250
+Amount after trim: 3250
+Amount are: from $3,325
+Amount after trim: 3325
+Amount are: from $3,350
+Amount after trim: 3350
+List of price: [3075, 3175, 3175, 3250, 3325, 3350]
+Getting minimum amount: 3075
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Rivendell Village
+Amount are: from $2,375
+Amount after trim: 2375
+Amount are: from $2,475
+Amount after trim: 2475
+Amount are: from $2,485
+Amount after trim: 2485
+List of price: [2375, 2475, 2485]
+Getting minimum amount: 2375
+Amount are: from $2,955
+Amount after trim: 2955
+Amount are: from $2,955
+Amount after trim: 2955
+Amount are: from $2,955
+Amount after trim: 2955
+List of price: [2955, 2955, 2955]
+Getting minimum amount: 2955
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Woodbridge Village
+Amount are: from $1,570
+Amount after trim: 1570
+Amount are: from $1,660
+Amount after trim: 1660
+Amount are: from $1,870
+Amount after trim: 1870
+List of price: [1570, 1660, 1870]
+Getting minimum amount: 1570
+Amount are: from $2,275
+Amount after trim: 2275
+Amount are: from $2,375
+Amount after trim: 2375
+Amount are: from $2,685
+Amount after trim: 2685
+List of price: [2275, 2375, 2685]
+Getting minimum amount: 2275
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Meridian Square
+Amount are: from $1,900
+Amount after trim: 1900
+Amount are: from $1,900
+Amount after trim: 1900
+List of price: [1900, 1900]
+Getting minimum amount: 1900
+Amount are: from $2,125
+Amount after trim: 2125
+Amount are: from $2,125
+Amount after trim: 2125
+Amount are: from $2,125
+Amount after trim: 2125
+List of price: [2125, 2125, 2125]
+Getting minimum amount: 2125
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Park Terrace at Rahway (55+)
+Amount are: from $1,675
+Amount after trim: 1675
+List of price: [1675]
+Getting minimum amount: 1675
+Amount are: from $2,025
+Amount after trim: 2025
+Amount are: from $2,350
+Amount after trim: 2350
+List of price: [2025, 2350]
+Getting minimum amount: 2025
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Woodhaven Terrace
+Amount are: from $2,615
+Amount after trim: 2615
+Amount are: from $2,815
+Amount after trim: 2815
+Amount are: from $2,890
+Amount after trim: 2890
+Amount are: from $3,165
+Amount after trim: 3165
+List of price: [2615, 2815, 2890, 3165]
+Getting minimum amount: 2615
+Amount are: from $3,060
+Amount after trim: 3060
+Amount are: from $3,300
+Amount after trim: 3300
+List of price: [3060, 3300]
+Getting minimum amount: 3060
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Harbortown Terrace
+Amount are: from $2,385
+Amount after trim: 2385
+Amount are: from $2,390
+Amount after trim: 2390
+Amount are: from $2,550
+Amount after trim: 2550
+Amount are: from $2,555
+Amount after trim: 2555
+Amount are: from $2,610
+Amount after trim: 2610
+List of price: [2385, 2390, 2550, 2555, 2610]
+Getting minimum amount: 2385
+Amount are: from $2,795
+Amount after trim: 2795
+Amount are: from $2,835
+Amount after trim: 2835
+Amount are: from $2,885
+Amount after trim: 2885
+Amount are: from $2,985
+Amount after trim: 2985
+Amount are: from $3,090
+Amount after trim: 3090
+Amount are: from $3,130
+Amount after trim: 3130
+Amount are: from $3,290
+Amount after trim: 3290
+Amount are: from $3,300
+Amount after trim: 3300
+Amount are: from $3,360
+Amount after trim: 3360
+Amount are: from $3,470
+Amount after trim: 3470
+List of price: [2795, 2835, 2885, 2985, 3090, 3130, 3290, 3300, 3360, 3470]
+Getting minimum amount: 2795
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Yorkshire Meadows
+Amount are: from $3,055
+Amount after trim: 3055
+List of price: [3055]
+Getting minimum amount: 3055
+Amount are: from $3,195
+Amount after trim: 3195
+List of price: [3195]
+Getting minimum amount: 3195
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Florida Grove Manor
+Amount are: from $1,740
+Amount after trim: 1740
+Amount are: from $1,945
+Amount after trim: 1945
+Amount are: from $2,160
+Amount after trim: 2160
+List of price: [1740, 1945, 2160]
+Getting minimum amount: 1740
+Amount are: from $2,175
+Amount after trim: 2175
+Amount are: from $2,330
+Amount after trim: 2330
+Amount are: from $2,375
+Amount after trim: 2375
+List of price: [2175, 2330, 2375]
+Getting minimum amount: 2175
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Edison Village
+Amount are: from $1,805
+Amount after trim: 1805
+Amount are: from $1,860
+Amount after trim: 1860
+Amount are: from $1,860
+Amount after trim: 1860
+Amount are: from $2,130
+Amount after trim: 2130
+Amount are: from $2,190
+Amount after trim: 2190
+List of price: [1805, 1860, 1860, 2130, 2190]
+Getting minimum amount: 1805
+Amount are: from $2,085
+Amount after trim: 2085
+Amount are: from $2,230
+Amount after trim: 2230
+List of price: [2085, 2230]
+Getting minimum amount: 2085
+Amount are: from $2,285
+Amount after trim: 2285
+Amount are: from $2,455
+Amount after trim: 2455
+Amount are: from $2,660
+Amount after trim: 2660
+List of price: [2285, 2455, 2660]
+Getting minimum amount: 2285
+Is Homepage min and detail page min equal? false
+Detail of Apartment: Village at Stratford (55+)
+Amount are: Call for Pricing
+Amount after trim: Call for Pricing
+Detail of Apartment: Hyde Park Village (55+)
+Amount are: from $1,675
+Amount after trim: 1675
+Amount are: from $1,875
+Amount after trim: 1875
+List of price: [1675, 1875]
+Getting minimum amount: 1675
+Amount are: from $2,025
+Amount after trim: 2025
+List of price: [2025]
+Getting minimum amount: 2025
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Edison Woods
+Amount are: from $1,925
+Amount after trim: 1925
+List of price: [1925]
+Getting minimum amount: 1925
+Amount are: from $2,270
+Amount after trim: 2270
+Amount are: from $2,285
+Amount after trim: 2285
+Amount are: from $2,400
+Amount after trim: 2400
+Amount are: from $2,500
+Amount after trim: 2500
+List of price: [2270, 2285, 2400, 2500]
+Getting minimum amount: 2270
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Evergreen East
+Amount are: from $2,275
+Amount after trim: 2275
+Amount are: from $2,280
+Amount after trim: 2280
+Amount are: from $2,300
+Amount after trim: 2300
+Amount are: from $2,300
+Amount after trim: 2300
+Amount are: from $2,300
+Amount after trim: 2300
+List of price: [2275, 2280, 2300, 2300, 2300]
+Getting minimum amount: 2275
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Evergreen Forest
+Amount are: from $1,955
+Amount after trim: 1955
+List of price: [1955]
+Getting minimum amount: 1955
+Amount are: from $2,300
+Amount after trim: 2300
+Amount are: from $2,365
+Amount after trim: 2365
+List of price: [2300, 2365]
+Getting minimum amount: 2300
+Amount are: from $2,855
+Amount after trim: 2855
+List of price: [2855]
+Getting minimum amount: 2855
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Blueberry Village
+Amount are: from $1,885
+Amount after trim: 1885
+Amount are: from $1,910
+Amount after trim: 1910
+Amount are: from $2,005
+Amount after trim: 2005
+Amount are: from $2,085
+Amount after trim: 2085
+List of price: [1885, 1910, 2005, 2085]
+Getting minimum amount: 1885
+Amount are: from $2,265
+Amount after trim: 2265
+Amount are: from $2,310
+Amount after trim: 2310
+Amount are: from $2,335
+Amount after trim: 2335
+Amount are: from $2,685
+Amount after trim: 2685
+List of price: [2265, 2310, 2335, 2685]
+Getting minimum amount: 2265
+Amount are: from $2,860
+Amount after trim: 2860
+Amount are: from $2,965
+Amount after trim: 2965
+List of price: [2860, 2965]
+Getting minimum amount: 2860
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Harbortown Heights
+Amount are: from $2,470
+Amount after trim: 2470
+Amount are: from $2,505
+Amount after trim: 2505
+Amount are: from $2,505
+Amount after trim: 2505
+Amount are: from $2,505
+Amount after trim: 2505
+Amount are: from $2,535
+Amount after trim: 2535
+Amount are: from $2,555
+Amount after trim: 2555
+Amount are: from $2,570
+Amount after trim: 2570
+Amount are: from $2,850
+Amount after trim: 2850
+List of price: [2470, 2505, 2505, 2505, 2535, 2555, 2570, 2850]
+Getting minimum amount: 2470
+Amount are: from $3,015
+Amount after trim: 3015
+List of price: [3015]
+Getting minimum amount: 3015
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Harbortown Sail
+Amount are: from $2,015
+Amount after trim: 2015
+Amount are: from $2,655
+Amount after trim: 2655
+Amount are: from $2,670
+Amount after trim: 2670
+Amount are: from $2,710
+Amount after trim: 2710
+Amount are: from $2,765
+Amount after trim: 2765
+Amount are: from $2,790
+Amount after trim: 2790
+Amount are: from $2,795
+Amount after trim: 2795
+Amount are: from $2,805
+Amount after trim: 2805
+List of price: [2015, 2655, 2670, 2710, 2765, 2790, 2795, 2805]
+Getting minimum amount: 2015
+Amount are: from $3,295
+Amount after trim: 3295
+Amount are: from $3,445
+Amount after trim: 3445
+Amount are: from $3,605
+Amount after trim: 3605
+Amount are: from $3,675
+Amount after trim: 3675
+Amount are: from $3,900
+Amount after trim: 3900
+List of price: [3295, 3445, 3605, 3675, 3900]
+Getting minimum amount: 3295
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Homestead Village
+Amount are: from $2,675
+Amount after trim: 2675
+List of price: [2675]
+Getting minimum amount: 2675
+Amount are: from $2,680
+Amount after trim: 2680
+Amount are: from $3,020
+Amount after trim: 3020
+List of price: [2680, 3020]
+Getting minimum amount: 2680
+Amount are: from $3,095
+Amount after trim: 3095
+Amount are: from $3,115
+Amount after trim: 3115
+Amount are: from $3,350
+Amount after trim: 3350
+Amount are: from $3,495
+Amount after trim: 3495
+Amount are: from $3,655
+Amount after trim: 3655
+List of price: [3095, 3115, 3350, 3495, 3655]
+Getting minimum amount: 3095
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Harbortown Ports North East
+Amount are: from $2,315
+Amount after trim: 2315
+Amount are: from $2,475
+Amount after trim: 2475
+Amount are: from $2,840
+Amount after trim: 2840
+List of price: [2315, 2475, 2840]
+Getting minimum amount: 2315
+Amount are: from $3,160
+Amount after trim: 3160
+Amount are: from $3,240
+Amount after trim: 3240
+List of price: [3160, 3240]
+Getting minimum amount: 3160
+Is Homepage min and detail page min equal? true
+Detail of Apartment: New Center Greens
+Amount are: from $2,445
+Amount after trim: 2445
+Amount are: from $2,695
+Amount after trim: 2695
+List of price: [2445, 2695]
+Getting minimum amount: 2445
+Amount are: from $2,795
+Amount after trim: 2795
+Amount are: from $3,045
+Amount after trim: 3045
+List of price: [2795, 3045]
+Getting minimum amount: 2795
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Edison Woods Senior (55+)
+Amount are: from $1,295
+Amount after trim: 1295
+List of price: [1295]
+Getting minimum amount: 1295
+Amount are: from $1,395
+Amount after trim: 1395
+List of price: [1395]
+Getting minimum amount: 1395
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Hidden Village
+Amount are: from $2,070
+Amount after trim: 2070
+Amount are: from $2,090
+Amount after trim: 2090
+Amount are: from $2,090
+Amount after trim: 2090
+List of price: [2070, 2090, 2090]
+Getting minimum amount: 2070
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Forest View
+Amount are: from $2,285
+Amount after trim: 2285
+Amount are: from $2,285
+Amount after trim: 2285
+Amount are: from $2,285
+Amount after trim: 2285
+Amount are: from $2,440
+Amount after trim: 2440
+List of price: [2285, 2285, 2285, 2440]
+Getting minimum amount: 2285
+Amount are: from $2,820
+Amount after trim: 2820
+Amount are: from $3,060
+Amount after trim: 3060
+Amount are: from $3,325
+Amount after trim: 3325
+List of price: [2820, 3060, 3325]
+Getting minimum amount: 2820
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Willingboro Square
+Amount are: from $1,585
+Amount after trim: 1585
+Amount are: from $1,585
+Amount after trim: 1585
+Amount are: from $1,595
+Amount after trim: 1595
+List of price: [1585, 1585, 1595]
+Getting minimum amount: 1585
+Amount are: from $1,900
+Amount after trim: 1900
+Amount are: from $1,950
+Amount after trim: 1950
+Amount are: from $1,975
+Amount after trim: 1975
+List of price: [1900, 1950, 1975]
+Getting minimum amount: 1900
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Sunnymeade Run
+Amount are: from $2,395
+Amount after trim: 2395
+Amount are: from $2,450
+Amount after trim: 2450
+List of price: [2395, 2450]
+Getting minimum amount: 2395
+Amount are: from $2,755
+Amount after trim: 2755
+Amount are: from $2,815
+Amount after trim: 2815
+Amount are: from $2,895
+Amount after trim: 2895
+Amount are: from $2,935
+Amount after trim: 2935
+Amount are: from $3,695
+Amount after trim: 3695
+Amount are: from $3,775
+Amount after trim: 3775
+List of price: [2755, 2815, 2895, 2935, 3695, 3775]
+Getting minimum amount: 2755
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Yorkshire Village Senior (55+)
+Amount are: from $1,595
+Amount after trim: 1595
+Amount are: from $1,750
+Amount after trim: 1750
+List of price: [1595, 1750]
+Getting minimum amount: 1595
+Amount are: from $1,825
+Amount after trim: 1825
+Amount are: from $1,850
+Amount after trim: 1850
+Amount are: from $1,925
+Amount after trim: 1925
+List of price: [1825, 1850, 1925]
+Getting minimum amount: 1825
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Woodhaven Meadows
+Amount are: from $2,695
+Amount after trim: 2695
+Amount are: from $2,740
+Amount after trim: 2740
+List of price: [2695, 2740]
+Getting minimum amount: 2695
+Amount are: from $3,250
+Amount after trim: 3250
+Amount are: from $3,260
+Amount after trim: 3260
+Amount are: from $3,310
+Amount after trim: 3310
+Amount are: from $3,325
+Amount after trim: 3325
+Amount are: from $3,335
+Amount after trim: 3335
+List of price: [3250, 3260, 3310, 3325, 3335]
+Getting minimum amount: 3250
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Delaware Heights
+Amount are: from $1,620
+Amount after trim: 1620
+Amount are: from $1,650
+Amount after trim: 1650
+Amount are: from $1,850
+Amount after trim: 1850
+Amount are: from $1,895
+Amount after trim: 1895
+List of price: [1620, 1650, 1850, 1895]
+Getting minimum amount: 1620
+Amount are: from $2,140
+Amount after trim: 2140
+Amount are: from $2,190
+Amount after trim: 2190
+List of price: [2140, 2190]
+Getting minimum amount: 2140
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Trafalgar
+Amount are: from $1,580
+Amount after trim: 1580
+Amount are: from $1,730
+Amount after trim: 1730
+List of price: [1580, 1730]
+Getting minimum amount: 1580
+Amount are: from $2,240
+Amount after trim: 2240
+Amount are: from $2,295
+Amount after trim: 2295
+List of price: [2240, 2295]
+Getting minimum amount: 2240
+Is Homepage min and detail page min equal? true
+Detail of Apartment: Sun Valley at Florham Park
+Amount are: from $2,202
+Amount after trim: 2202
+Amount are: from $2,398
+Amount after trim: 2398
+Amount are: from $2,504
+Amount after trim: 2504
+List of price: [2202, 2398, 2504]
+Getting minimum amount: 2202
+Amount are: from $2,567
+Amount after trim: 2567
+Amount are: from $2,899
+Amount after trim: 2899
+Amount are: from $2,993
+Amount after trim: 2993
+Amount are: from $3,143
+Amount after trim: 3143
+List of price: [2567, 2899, 2993, 3143]
+Getting minimum amount: 2567
+Amount are: from $2,762
+Amount after trim: 2762
+Amount are: from $3,002
+Amount after trim: 3002
+Amount are: from $3,217
+Amount after trim: 3217
+Amount are: from $3,324
+Amount after trim: 3324
+Amount are: from $3,694
+Amount after trim: 3694
+List of price: [2762, 3002, 3217, 3324, 3694]
+Getting minimum amount: 2762
+Amount are: from $3,769
+Amount after trim: 3769
+Amount are: from $3,817
+Amount after trim: 3817
+Amount are: from $3,817
+Amount after trim: 3817
+List of price: [3769, 3817, 3817]
+Getting minimum amount: 3769
+Is Homepage min and detail page min equal? false
+Detail of Apartment: Harbortown Ports
+Amount are: from $2,455
+Amount after trim: 2455
+Amount are: from $2,485
+Amount after trim: 2485
+Amount are: from $2,570
+Amount after trim: 2570
+Amount are: from $2,625
+Amount after trim: 2625
+Amount are: from $2,635
+Amount after trim: 2635
+Amount are: from $2,700
+Amount after trim: 2700
+List of price: [2455, 2485, 2570, 2625, 2635, 2700]
+Getting minimum amount: 2455
+Amount are: from $2,925
+Amount after trim: 2925
+Amount are: from $3,005
+Amount after trim: 3005
+Amount are: from $3,175
+Amount after trim: 3175
+Amount are: from $3,340
+Amount after trim: 3340
+List of price: [2925, 3005, 3175, 3340]
+Getting minimum amount: 2925
+Is Homepage min and detail page min equal? true
+]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 51594
+Starting ChromeDriver 105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}) on port 58305
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 24, 2022 1:48:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 24, 2022 8:27:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Sep 24, 2022 1:48:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sep 24, 2022 8:27:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 105, so returning the closest version found: 104
-Sep 24, 2022 1:48:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sep 24, 2022 8:27:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 105 of 104
+[1664029687.306][SEVERE]: Timed out receiving message from renderer: 28.617
+[1664029687.310][SEVERE]: Timed out receiving message from renderer: 28.617
 ]]></system-err>
 </testsuite>

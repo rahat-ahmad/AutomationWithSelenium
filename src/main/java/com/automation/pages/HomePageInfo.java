@@ -21,32 +21,42 @@ public class HomePageInfo {
     }
 
     public void setApartmentName(WebElement element) throws InterruptedException {
-        Thread.sleep(1000);
         apartmentName = element.findElement(By.tagName("a")).getAttribute("title").trim();  //getting title from home page list; List can be found from other component
     }
 
     public void seturl(WebElement element) throws InterruptedException {
-        Thread.sleep(1000);
         url = element.findElement(By.tagName("a")).getAttribute("href").trim();
     }
 
-    public void setBedListPerEachApartmentAndMinPriceBed(WebElement element){
-        String lines[] = element.findElement(By.xpath("//p[@class='beds']")).getText().split("\\r?\\n");
+    public void setBedListPerEachApartmentAndMinPriceBed(WebElement element , int i){
 
-        List<String> bedText = new ArrayList<String>();
-
-        //Getting all the bed and min cost of a Apartment
-        for (int i = 0 ; i < lines.length; i ++){
-            bedText.addAll(Arrays.asList(lines[i].split(Pattern.quote(" Bedroom from $"))));
+        if(element.findElements(By.xpath("//p[@class='beds']")).get(i).getText().contains("Call for Pricing")){
+            bedListPerEachApartment.add("Call for Pricing");
+            minPricePerBed.add(0);
         }
 
-        //Separte bedList and min cost in list
-        for (int i = 0; i < bedText.size();i=i+2){
-            bedListPerEachApartment.add(bedText.get(i));
-            Integer minPrice = Integer.parseInt(bedText.get(i+1).replace(",",""));
-            minPricePerBed.add(minPrice);
-        }
+        else{
+            String lines[] = element.findElements(By.xpath("//p[@class='beds']")).get(i).getText().split("\\r?\\n");
 
+            List<String> bedText = new ArrayList<String>();
+
+            //Getting all the bed and min cost of a Apartment
+            for (int j = 0 ; j < lines.length; j ++){
+                bedText.addAll(Arrays.asList(lines[j].split(Pattern.quote(" from $"))));
+            }
+
+            int k = 0;
+            //Separte bedList and min cost in list
+            for (int j = 0; j < bedText.size();j=j+2){
+                bedListPerEachApartment.add(bedText.get(j));
+                System.out.println("Total Bed: "+ bedListPerEachApartment.get(k));
+                Integer minPrice = Integer.parseInt(bedText.get(j+1).replace(",",""));
+                minPricePerBed.add(minPrice);
+                System.out.println("Min Price of that bed: "+ minPricePerBed.get(k));
+                k++;
+            }
+
+        }
 
     }
 
