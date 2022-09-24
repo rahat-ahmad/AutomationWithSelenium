@@ -8,9 +8,7 @@ import com.automation.util.WebDriverInitialization;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Ignore;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -35,7 +33,7 @@ public class ApartmentTest {
 
     @Test
 //    @Ignore
-    public void loginWithValidCredentials() throws InterruptedException, IOException {
+    public void validateMinPriceFromHomePageToDetailPage() throws InterruptedException, IOException {
         ApartmentInfoFromHomePage apartmentInfoFromHomePage = new ApartmentInfoFromHomePage(wait);
         List<HomePageInfo> homePageInfoList = new ArrayList<HomePageInfo>();
         homePageInfoList = apartmentInfoFromHomePage.getAparmentInfoFromHomePage();
@@ -65,15 +63,9 @@ public class ApartmentTest {
 
     }
 
-    @Test
-    @Ignore
-    public void test() {
-        List<Integer> list = new ArrayList<>();
-        list.add(5);
-        list.add(9);
-        list.add(3);
-        list.add(1);
-        System.out.println("Getting minimum amount: " + Collections.min(list));
+    @AfterMethod
+    public void closeDriver(){
+        driver.quit();
     }
 
 }
