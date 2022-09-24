@@ -1,4 +1,18 @@
-com/automation/WebDriverInitialization.java
- com.automation.WebDriverInitialization
-com/automation/LoginWithWebDriver.java
- com.automation.LoginWithWebDriver
+com/automation/util/Utils.java
+ com.automation.util.Utils
+com/automation/util/LoginWithWebDriver.java
+ com.automation.util.LoginWithWebDriver
+com/automation/util/WebDriverInitialization.java
+ com.automation.util.WebDriverInitialization
+com/automation/pages/ApartmentDetailPage.java
+ com.automation.pages.ApartmentDetailPage
+com/automation/pages/ApartmentListModel.java
+ com.automation.pages.ApartmentListModel
+com/automation/pages/ApartmentModel.java
+ com.automation.pages.ApartmentModel
+com/automation/services/ApartmentDetailInfo.java
+ com.automation.services.ApartmentDetailInfo
+com/automation/pages/HomePageInfo.java
+ com.automation.pages.HomePageInfo
+com/automation/services/ApartmentInfoFromHomePage.java
+ com.automation.services.ApartmentInfoFromHomePage

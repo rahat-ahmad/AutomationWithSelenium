@@ -1,0 +1,7 @@
+<suite name="Suite1" verbose="1" >
+    <test name="User Creation" >
+        <classes>
+            <class name="com.automation.ApartmentTest" />
+        </classes>
+    </test>
+</suite>

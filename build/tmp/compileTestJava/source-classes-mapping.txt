@@ -1,0 +1,2 @@
+com/automation/ApartmentTest.java
+ com.automation.ApartmentTest
