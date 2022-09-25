@@ -1,5 +1,5 @@
 <suite name="Suite1" verbose="1" >
-    <test name="User Creation" >
+    <test name="Minimum cost verification from home and detail page" >
         <classes>
             <class name="com.automation.ApartmentTest" />
         </classes>
