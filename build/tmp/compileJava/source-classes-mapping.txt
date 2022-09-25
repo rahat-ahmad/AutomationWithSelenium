@@ -1,20 +1,16 @@
 com/automation/util/WebDriverInitialization.java
  com.automation.util.WebDriverInitialization
-com/automation/pages/ApartmentListModel.java
- com.automation.pages.ApartmentListModel
+com/automation/util/CSVFileWrite.java
+ com.automation.util.CSVFileWrite
 com/automation/util/Utils.java
  com.automation.util.Utils
-com/automation/services/ApartmentInfoFromHomePage.java
- com.automation.services.ApartmentInfoFromHomePage
-com/automation/pages/ApartmentModel.java
- com.automation.pages.ApartmentModel
-com/automation/pages/HomePageInfo.java
- com.automation.pages.HomePageInfo
 com/automation/util/LoginWithWebDriver.java
  com.automation.util.LoginWithWebDriver
+com/automation/pages/HomePageInfo.java
+ com.automation.pages.HomePageInfo
+com/automation/services/ApartmentInfoFromHomePage.java
+ com.automation.services.ApartmentInfoFromHomePage
 com/automation/services/ApartmentDetailInfo.java
  com.automation.services.ApartmentDetailInfo
 com/automation/pages/ApartmentDetailPage.java
  com.automation.pages.ApartmentDetailPage
-com/automation/util/CSVFileWrite.java
- com.automation.util.CSVFileWrite

@@ -1,9 +1,7 @@
 package com.automation.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,11 +18,11 @@ public class HomePageInfo {
     public HomePageInfo() {
     }
 
-    public void setApartmentName(WebElement element) throws InterruptedException {
+    public void setApartmentName(WebElement element) {
         apartmentName = element.findElement(By.tagName("a")).getAttribute("title").trim();  //getting title from home page list; List can be found from other component
     }
 
-    public void seturl(WebElement element) throws InterruptedException {
+    public void seturl(WebElement element) {
         url = element.findElement(By.tagName("a")).getAttribute("href").trim();
     }
 
